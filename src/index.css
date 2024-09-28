@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+@layer{
+    .button{
+        background:linear-gradient(to right ,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        color:white;
+        padding:10px 20px;
+        border-radius:25px;
+    }
+
+    .color{
+        color: hsl(233, 26%, 24%)
+    }
+}

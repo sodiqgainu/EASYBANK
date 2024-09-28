@@ -1,0 +1,52 @@
+.hidden-links{
+    display: none;
+}
+.menu{
+    display: none;
+    font-size: 25px;
+}
+.links{
+    display: flex;
+    gap:2rem;
+}
+
+@media (max-width:768px) {
+    .menu{
+        display: block;
+    }
+    .button{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .hidden-links{
+        display: flex;
+        position: fixed;
+        background: white;
+        flex-direction: column;
+      
+        width:100%;
+       left: 0px;
+        top:80px;
+        right:0px;
+        max-width: 90%;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+    .hide{
+        max-height: 0px;
+        transition: max-height 0.2s ease-in-out;
+    }
+    .show{
+        max-height: 350px;
+        transition: max-height 0.2s ease-in-out;
+    }
+    .hidden-links a{
+        padding: 20px;
+    }
+    .hidden-links a:hover{
+        background: rgb(238, 236, 236);
+       
+    }
+}

@@ -1,0 +1,25 @@
+.btn{
+    background:linear-gradient(to right ,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.img-container{
+    background-image: url('../../assets/images/bg-intro-desktop.svg');
+    
+    background-repeat: no-repeat;
+
+ 
+  
+}
+
+@media (max-width: 768px) {
+    .img-container{
+        background-image: url('../../assets/images/bg-intro-mobile.svg');
+        background-position: center;
+        height: 150vh;
+        background-size: contain;
+ 
+    }
+}
